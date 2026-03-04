@@ -25,7 +25,7 @@ function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* Left Side Illustration */}
+          {/* Left Illustration */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -34,13 +34,13 @@ function About() {
             className="flex justify-center"
           >
             <img
-              src="/coding.png"
+              src="src/assets/images/coding.png" // ✅ Relative path fix
               alt="Coding Illustration"
               className="w-80 md:w-96 rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-300"
             />
           </motion.div>
 
-          {/* Right Side Content */}
+          {/* Right Content */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -79,9 +79,7 @@ function About() {
                 <li><strong className="text-blue-400">Email:</strong> imbharatpathak2004@gmail.com</li>
               </ul>
             </motion.div>
-
           </motion.div>
-
         </div>
       </div>
     </motion.section>
