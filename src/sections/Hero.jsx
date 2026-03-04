@@ -70,7 +70,7 @@ function Hero() {
           className="flex justify-center"
         >
           <motion.img
-            src="/bharat-hero.png"
+            src="/bharat-portfolio/bharat-hero.png"
             alt="Bharat"
             animate={{ y: [0, -15, 0] }}
             transition={{
